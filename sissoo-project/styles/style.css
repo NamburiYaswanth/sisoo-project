@@ -307,3 +307,29 @@ p{
   margin: 0px;
   padding: 0px;
 }
+.status {
+  display: flex;
+  gap: 34px;
+  padding : 12px;
+  margin: 0px 40px;
+  padding: 3px 40px 3px 3px;
+}
+
+.proposal {
+  font-size: 14px;
+}
+.programme {
+  font-size: 18px;
+}
+
+.btn-app {
+  background-color: rgba(120, 215, 241, 0.133);
+  border: none;
+  width: 150px;
+  height: 26px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
