@@ -66,12 +66,14 @@ const Ongoing = () => {
                    ))}
                  </Stepper>
                </div>
-               <div>
-                <p>Progrmmae status</p>
-                <p>you're send a proposal</p>
+               <div className='status'>
+               <div >
+                <p className='programme'>Progrmmae status</p>
+                <p className='proposal' >you're send a proposal</p>
                </div>
                <div>
-                <button>Applied</button>
+                <button className='btn-app'>Applied</button>
+               </div>
                </div>
    
                <div className="info-container">

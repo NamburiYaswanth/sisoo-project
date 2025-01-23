@@ -8,10 +8,10 @@ import Ongoing from './components/Ongoing';
 const App = () => {
   return (
     <div>
-      {/* <Card />
-      <Text /> */}
-      {/* <TraininProgramme /> */}
-      {/* <DashBoard /> */}
+  <Card />
+      <Text /> 
+   <TraininProgramme /> 
+      <DashBoard /> 
       <Ongoing />
     </div>
   );
