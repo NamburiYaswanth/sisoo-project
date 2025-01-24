@@ -7,21 +7,22 @@ import "../styles/style.css";
 import Ongoing from './components/Ongoing';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Animate from './components/Animate';
-import Otppage from './components/Otppage';
-import LoginPage from './components/LoginPage';
+import Settings from './components/Settings';
+import LoginPage from './components/pages/LoginPages';
+import Otppage from './components/pages/Otppage';
 const App = () => {
   return (
     <div>
-      {/* <Card />
+      <Card />
       <Text /> 
       <TraininProgramme /> 
-      <DashBoard />   */} 
-      {/* <Ongoing />   */}
-
+      <DashBoard /> 
+      <Ongoing />
+      <Settings /> 
       <Router>
       <Routes>
         <Route path="/" element={<Animate />} />
-        <Route path="/another-page" element={<LoginPage />} />
+        <Route path="/login-page" element={<LoginPage />} />
         <Route path="/otp-page" element={<Otppage />} />
       </Routes>
     </Router>
