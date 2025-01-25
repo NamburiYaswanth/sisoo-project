@@ -1,24 +1,29 @@
-import "../styles/style.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Animate from './components/Animate';
-import Otppage from './components/Otppage';
-import LoginPage from './components/LoginPage';
-import TrainerCard from './pages/TrainerCard/TrainerCard'
-import Profile from './pages/Profile/Profile';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Card from './components/Card';
+import DashBoard from './components/DashBoard';
+import Settings from './components/Settings';
+import Text from './components/Text';
+import LoginPage from './components/pages/LoginPages';
+import Otppage from './components/pages/Otppage';
+import Animate from './components/pages/Animate';
+import TrainingProgramme from './components/TrainingProgramme';
+import Ongoing from './components/Ongoing';
+import TrainerCard from './components/TrainerCard';
+import Profile from './components/Profile';
+
 const App = () => {
   return (
     <div>
-      <div>hello</div>
-      {/* <Card />
-      <Text /> 
-      <TraininProgramme /> 
-      <DashBoard />   */} 
-      {/* <Ongoing />   */}
-     <TrainerCard /> 
+      <Card />
+      <Text />
+       <TrainingProgramme /> 
+      <DashBoard /> 
+      <Ongoing />
+      <Settings /> 
       <Router>
       <Routes>
         <Route path="/" element={<Animate />} />
-        <Route path="/another-page" element={<LoginPage />} />
+        <Route path="/login-page" element={<LoginPage />} />
         <Route path="/otp-page" element={<Otppage />} />
         <Route  path  = "/trainers" element= {<TrainerCard />} />
         < Route path = "/profile"  element = {<Profile />} />

@@ -7,7 +7,7 @@ const Animate = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/another-page"); 
+      navigate("/login-page"); 
     }, 5000 ); 
 
     return () => clearTimeout(timer); 

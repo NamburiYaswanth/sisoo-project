@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineNotifications } from "react-icons/md";
 import Siscoo from "../assets/sissoo1.svg";
 import {
@@ -70,7 +69,7 @@ const DashBoard = () => {
           <p>
             <FaClipboardCheck />
           </p>
-          <p> My Training Program's</p>
+          <p> My Training Programs</p>
         </span>
         <span className="side-icon">
           <p>
