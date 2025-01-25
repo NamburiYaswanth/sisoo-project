@@ -1,0 +1,117 @@
+
+.trainer-card {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 600px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .bookmark{
+    size: 15px;
+    position: relative;
+    right:40px;
+  }
+  .trainer-info {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .trainer-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-role {
+    margin: 0;
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  .hire-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    right:100px;
+    
+  }
+  
+  .hire-button:hover {
+    background-color: #0056b3;
+
+  }
+  
+  .menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .card-body {
+    margin-bottom: 15px;
+  }
+  
+  .training-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .training-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color:rgb(179, 174, 174)
+  }
+  
+  .budget,
+  .mode {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .price{
+    color:#007bff
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    color: #007bff;
+  }
+  
+
+ 
