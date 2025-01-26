@@ -11,19 +11,19 @@ import Settings from './components/Settings';
 import LoginPage from './components/pages/LoginPages';
 import Otppage from './components/pages/Otppage';
 const App = () => {
-  return (
+  return ( 
     <div>
-      <Card />
-      <Text /> 
-      <TraininProgramme /> 
-      <DashBoard /> 
-      <Ongoing />
-      <Settings /> 
       <Router>
+        <DashBoard />
       <Routes>
-        <Route path="/" element={<Animate />} />
-        <Route path="/login-page" element={<LoginPage />} />
-        <Route path="/otp-page" element={<Otppage />} />
+         <Route path="/" element={<Animate />} />
+         <Route path="/text" element={<Text />} />
+         <Route path="/card" element={<Card />} />
+         <Route path="/traning-programme" element={<TraininProgramme />} />
+         <Route path="/ongoing" element={<Ongoing />} />
+         <Route path="/login-page" element={<LoginPage />} />
+         <Route path="/otp-page" element={<Otppage />} />
+         <Route path="/settings-page" element={<Settings />} />
       </Routes>
     </Router>
     </div>

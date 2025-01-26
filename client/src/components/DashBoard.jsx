@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Routes, Route, BrowserRouter as Router, Outlet } from "react-router-dom";
 import { MdOutlineNotifications } from "react-icons/md";
 import Siscoo from "../assets/sissoo1.svg";
 import {
@@ -14,6 +15,18 @@ import {
   FaChartLine,
   FaFolderOpen,
 } from "react-icons/fa";
+import DashBoardPgae from "./pages/DashBoardPgae";
+import AccountPrefrence from "./pages/AccountPrefrence";
+import TrainerList from "./pages/TrainerList";
+import Requirement from "./pages/Requirement";
+import Mytraininng from "./pages/Mytraininng";
+import TrainersDirectory from "./pages/TrainersDirectory";
+import Messages from "./pages/Messages";
+import ProposalManagment from "./pages/ProposalManagment";
+import Settings from "./pages/Settings";
+import BillingPayment from "./pages/BillingPayment";
+import TraininngAnalytics from "./pages/TraininngAnalytics";
+import TrainingResources from "./pages/TrainingResources";
 
 const DashBoard = () => {
   return (
@@ -46,75 +59,93 @@ const DashBoard = () => {
           </div>
         </div>
       </div>
-
+      <div className="total">
       <div className="left-sidebar">
-        <span className="side-icon">
-          <p>
-            <FaTachometerAlt />
-          </p>
-          <p> Dashboard</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaUserTie />{" "}
-          </p>
-          <p> Trainer list</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaClipboardList />
-          </p>
-          <p> Post a Requirements</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaClipboardCheck />
-          </p>
-          <p> My Training Program's</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaBook />
-          </p>
-          <p> Trainers Directory</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaEnvelope />
-          </p>
-          <p> Messages</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaFileAlt />
-          </p>
+      <span className="side-icon">
+        <Link to="/dashboard-page" className="side-icon">
+          <FaTachometerAlt />
+          <p>Dashboard</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/trainer-list" className="side-icon">
+          <FaUserTie /> <p>Trainer list</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/post-requirements" className="side-icon">
+          <FaClipboardList />
+          <p>Post a Requirements</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/my-training-programs" className="side-icon">
+          <FaClipboardCheck />
+          <p>My Training Program's</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/trainers-directory" className="side-icon">
+          <FaBook />
+          <p>Trainers Directory</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/messages" className="side-icon">
+          <FaEnvelope />
+          <p>Messages</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/proposal-management" className="side-icon">
+          <FaFileAlt />
           <p>Proposal Management</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaCog />
-          </p>
-          <p> Settings</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaCreditCard />
-          </p>
-          <p> Billing & Payments</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaChartLine />{" "}
-          </p>
-          <p> Training Analytics</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaFolderOpen />{" "}
-          </p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/settings" className="side-icon">
+          <FaCog />
+          <p>Settings</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/billing-payments" className="side-icon">
+          <FaCreditCard />
+          <p>Billing & Payments</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/training-analytics" className="side-icon">
+          <FaChartLine />
+          <p>Training Analytics</p>
+        </Link>
+      </span>
+      <span className="side-icon">
+        <Link to="/training-resource" className="side-icon">
+          <FaFolderOpen />
           <p>Training Resource</p>
-        </span>
-      </div>
+        </Link>
+      </span>
+    </div>
+      <div className="left-rightside">
+            <Routes>
+             <Route path="/dashboard-page" element={<DashBoardPgae />} />
+             <Route path="/trainer-list" element={<TrainerList />} />
+             <Route path="/post-requirements" element={<Requirement />} />
+             <Route path="/my-training-programs" element={<Mytraininng />} />
+             <Route path="/trainers-directory" element={<TrainersDirectory />} />
+             <Route path="/messages" element={<Messages />} />
+             <Route path="/proposal-management" element={<ProposalManagment />} />
+             <Route path="/settings" element={<Settings />} />
+             <Route path="/billing-payments" element={<BillingPayment />} />
+             <Route path="/training-analytics" element={<TraininngAnalytics />} />
+             <Route path="/training-resource" element={<TrainingResources />} />
+             
+
+            </Routes>
+            <Outlet />
+          </div>
+    </div>
     </div>
   );
 };
