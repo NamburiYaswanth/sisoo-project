@@ -98,54 +98,6 @@ const DashBoard = () => {
         </Link>
       </span>
       <span className="side-icon">
-        <Link to="/proposal-management" className="side-icon">
-          <FaFileAlt />
-        <span className="side-icon">
-          <p>
-            <FaTachometerAlt />
-          </p>
-          <p> Dashboard</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaUserTie />{" "}
-          </p>
-          <p> Trainer list</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaClipboardList />
-          </p>
-          <p> Post a Requirements</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaClipboardCheck />
-          </p>
-          <p> My Training Programs</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaBook />
-          </p>
-          <p> Trainers Directory</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaEnvelope />
-          </p>
-          <p> Messages</p>
-        </span>
-        <span className="side-icon">
-          <p>
-            <FaFileAlt />
-          </p>
-          </span>
-
-          <p>Proposal Management</p>
-        </Link>
-      </span>
-      <span className="side-icon">
         <Link to="/settings" className="side-icon">
           <FaCog />
           <p>Settings</p>
