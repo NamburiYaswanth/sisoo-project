@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { GoStar } from "react-icons/go";
 import { FaReact } from "react-icons/fa";
 import { SiPython, SiFigma, SiAdobexd } from "react-icons/si";

@@ -1,0 +1,19 @@
+*{
+    background-color: white;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+}
+
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: sp;
+    gap:40px;
+}

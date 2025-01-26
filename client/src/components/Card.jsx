@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoPeople } from "react-icons/io5";
 import { FaPeopleLine } from "react-icons/fa6";
 

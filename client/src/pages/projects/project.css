@@ -1,0 +1,71 @@
+.trainings-container {
+    max-width: 200px;
+    margin: 10px auto;
+    position:relative;
+    left:200px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    justify-content: right;
+   
+
+  }
+  
+  .number {
+      background-color: white;
+      border-radius: 100%;
+      color :#007bff;
+      margin-left: 10px;
+      width: 15px;
+      
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: lighter;
+    color: whitesmoke;
+    background-color: #2676C2;
+    margin-bottom: 20px;
+  }
+  
+  .header span {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+  
+  .trainings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .training-card {
+    background-color: #e7f1ff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c3d9ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-card h3, .training-card h4 {
+    color: #555;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  
+  .training-card p {
+    font-size: 14px;
+    color: #007bff;
+    margin: 5px 0;
+  }
+  
+  .training-card p:nth-child(2) {
+    font-weight: bold;
+    color :#007bff
+  }
