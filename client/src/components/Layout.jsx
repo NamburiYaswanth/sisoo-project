@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Routes, Route, BrowserRouter as Router, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MdOutlineNotifications } from "react-icons/md";
 import Siscoo from "../assets/sissoo1.svg";
 import {
@@ -28,7 +28,7 @@ import BillingPayment from "./pages/BillingPayment";
 import TraininngAnalytics from "./pages/TraininngAnalytics";
 import TrainingResources from "./pages/TrainingResources";
 
-const DashBoard = () => {
+const Layout = ({children}) => {
   return (
     <div className="main">
       <div className="header">
@@ -123,26 +123,11 @@ const DashBoard = () => {
       </span>
     </div>
       <div className="left-rightside">
-            <Routes>
-             <Route path="/dashboard-page" element={<DashBoardPgae />} />
-             <Route path="/trainer-list" element={<TrainerList />} />
-             <Route path="/post-requirements" element={<Requirement />} />
-             <Route path="/my-training-programs" element={<Mytraininng />} />
-             <Route path="/trainers-directory" element={<TrainersDirectory />} />
-             <Route path="/messages" element={<Messages />} />
-             <Route path="/proposal-management" element={<ProposalManagment />} />
-             <Route path="/settings" element={<Settings />} />
-             <Route path="/billing-payments" element={<BillingPayment />} />
-             <Route path="/training-analytics" element={<TraininngAnalytics />} />
-             <Route path="/training-resource" element={<TrainingResources />} />
-             
-
-            </Routes>
-            <Outlet />
+          {children}
           </div>
     </div>
     </div>
   );
 };
 
-export default DashBoard;
+export default Layout;

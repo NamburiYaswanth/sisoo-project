@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const Messages = () => {
   return (
-    <div>
+    <Layout>
       <p>Message page</p>
-    </div>
+    </Layout>
   );
 }
 

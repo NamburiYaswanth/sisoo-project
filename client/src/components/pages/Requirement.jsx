@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const Requirement = () => {
   return (
-    <div>
+    <Layout>
       <p>post a requiremnt page</p>
-    </div>
+    </Layout>
   );
 }
 

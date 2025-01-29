@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const TrainersDirectory = () => {
   return (
-    <div>
+    <Layout>
       <p>trainers directory page</p>
-    </div>
+    </Layout>
   );
 }
 

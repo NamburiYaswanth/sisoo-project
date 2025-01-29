@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import Settings from './Settings';
 
 const LoginandSecurity = () => {
   return (
-    <div>
+    <Settings>
       <div className="settings-section">
         <h3>Account Access</h3>
         <div className="settings-item">
@@ -21,7 +22,7 @@ const LoginandSecurity = () => {
           <p>Close Account</p>
         </div>
       </div>
-    </div>
+    </Settings>
   );
 }
 

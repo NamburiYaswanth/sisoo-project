@@ -1,0 +1,64 @@
+
+.help-center {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .help-topics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .help-card {
+    display: flex;
+    align-items: center;
+    background-color: #e1efff;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 100px;
+  }
+  
+  
+  .help-card .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .faq-title {
+    margin-top: 20px;
+  }
+  
+  .faq-list {
+    margin-top: 10px;
+  }
+  
+  .faq-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .faq-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .help-card .icon {
+    background-color:rgb(94, 160, 241);
+    padding: 5px;
+    border-radius: 50px;
+  
+  }
+  .tt-ds p{
+    padding: 3px;
+  }

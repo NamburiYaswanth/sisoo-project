@@ -1,42 +1,50 @@
-import React from 'react';
-import { IoIosArrowForward } from 'react-icons/io';
-
+import React from "react";
+import { IoIosArrowForward } from "react-icons/io";
+import Settings from "./Settings";
 const AccountPrefrence = () => {
   return (
-    <div>
-       <div className='part2-main'>
-              <div className='profile-part'>
-            <p>Profile information</p>
-            <p>Name, Occupation, Company, skills, certification & Contact Information</p>
-            </div>
-            <div className='profile-part1'>
-            <p>General preference</p>
-            <div className='lan'>
+    <Settings>
+      <div className="part2-main">
+        <div className="profile-part">
+          <p>Profile information</p>
+          <p>
+            Name, Occupation, Company, skills, certification & Contact
+            Information
+          </p>
+        </div>
+        <div className="profile-part1">
+          <p>General preference</p>
+          <div className="lan">
             <p>Language</p>
             <span>
-            <p>English</p>
-            <span className='arr-icon'><IoIosArrowForward /></span>
+              <p>English</p>
+              <span className="arr-icon">
+                <IoIosArrowForward />
+              </span>
             </span>
-            </div>
-            <div className='lan'>
+          </div>
+          <div className="lan">
             <p>Showing profile</p>
             <span>
-            <p>show for all</p>
-            <span className='arr-icon'><IoIosArrowForward /></span>
+              <p>show for all</p>
+              <span className="arr-icon">
+                <IoIosArrowForward />
+              </span>
             </span>
-            </div>
-            <div className='lan'>
+          </div>
+          <div className="lan">
             <p>show contact information</p>
             <span>
-            <p>No one</p>
-            <span className='arr-icon'><IoIosArrowForward /></span>
+              <p>No one</p>
+              <span className="arr-icon">
+                <IoIosArrowForward />
+              </span>
             </span>
-            </div>
-            </div>
-            
-            </div> 
-    </div>
+          </div>
+        </div>
+      </div>
+    </Settings>
   );
-}
+};
 
 export default AccountPrefrence;

@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const BillingPayment = () => {
   return (
-    <div>
+    <Layout>
       <p>Billing and payments</p>
-    </div>
+    </Layout>
   );
 }
 

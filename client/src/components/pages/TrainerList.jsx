@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const TrainerList = () => {
   return (
-    <div>
-      <p>Trainers list page</p>
-    </div>
+    <Layout>
+       <p>Trainers list page</p>
+    </Layout>
   );
 }
 
