@@ -1,0 +1,46 @@
+.prime-part{
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    margin:50px;
+    border-width: 3px;
+    
+}
+
+.leftside-part{
+    width:40%;
+
+}
+
+.rightside-part{
+    width:50%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+
+
+
+.image{
+    height:130px;
+    width:130px;
+}
+
+.right-part{
+    background-color: rgb(94, 94, 247);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:70%;
+    height:100%;
+}
+
+.right-left{
+    color: white;
+}

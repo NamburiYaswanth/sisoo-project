@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
-
+import "./../stylesall/settings.css"
 const Settings = ({ children }) => {
   return (
     <Layout>

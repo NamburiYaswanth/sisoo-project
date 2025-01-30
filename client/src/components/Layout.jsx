@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineNotifications } from "react-icons/md";
@@ -9,50 +10,42 @@ import {
   FaClipboardCheck,
   FaBook,
   FaEnvelope,
-  FaFileAlt,
   FaCog,
   FaCreditCard,
   FaChartLine,
   FaFolderOpen,
 } from "react-icons/fa";
-import DashBoardPgae from "./pages/DashBoardPgae";
-import AccountPrefrence from "./pages/AccountPrefrence";
-import TrainerList from "./pages/TrainerList";
-import Requirement from "./pages/Requirement";
-import Mytraininng from "./pages/Mytraininng";
-import TrainersDirectory from "./pages/TrainersDirectory";
-import Messages from "./pages/Messages";
-import ProposalManagment from "./pages/ProposalManagment";
-import Settings from "./pages/Settings";
-import BillingPayment from "./pages/BillingPayment";
-import TraininngAnalytics from "./pages/TraininngAnalytics";
-import TrainingResources from "./pages/TrainingResources";
+import "./../stylesall/layout.css";
 
-const Layout = ({children}) => {
+const sidebarLinks = [
+  { to: "/dashboard-page", icon: <FaTachometerAlt />, label: "Dashboard" },
+  { to: "/trainer-list", icon: <FaUserTie />, label: "Trainer list" },
+  { to: "/post-requirements", icon: <FaClipboardList />, label: "Post a Requirements" },
+  { to: "/my-training-programs", icon: <FaClipboardCheck />, label: "My Training Program's" },
+  { to: "/trainers-directory", icon: <FaBook />, label: "Trainers Directory" },
+  { to: "/messages", icon: <FaEnvelope />, label: "Messages" },
+  { to: "/settings", icon: <FaCog />, label: "Settings" },
+  { to: "/billing-payments", icon: <FaCreditCard />, label: "Billing & Payments" },
+  { to: "/training-analytics", icon: <FaChartLine />, label: "Training Analytics" },
+  { to: "/training-resource", icon: <FaFolderOpen />, label: "Training Resource" },
+];
+
+const Layout = ({ children }) => {
   return (
     <div className="main">
       <div className="header">
-        <div>
-          <img src={Siscoo} />
-        </div>
+        <img src={Siscoo} alt="Logo" />
         <div className="search-container">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Write something here...."
-          />
+          <input type="text" className="search-input" placeholder="Write something here...." />
           <span className="search-icon">🔍</span>
         </div>
-        <div className="not-icon">
-          <MdOutlineNotifications size={30} />
-        </div>
+        <MdOutlineNotifications size={30} className="not-icon" />
         <div className="profile-section">
-          <div>
-            <img
-              className="profile"
-              src="https://media.istockphoto.com/id/2158247728/photo/wild-male-bengal-tiger-or-panthera-tigris-hiding-in-grass-and-stalking-his-prey-in-golden.webp?a=1&b=1&s=612x612&w=0&k=20&c=8qHEx5AVV36F63vqldHoERkc5czvFo_37joaK-s0YqY="
-            />
-          </div>
+          <img
+            className="profile"
+            src="https://media.istockphoto.com/id/2158247728/photo/wild-male-bengal-tiger-or-panthera-tigris-hiding-in-grass-and-stalking-his-prey-in-golden.webp?a=1&b=1&s=612x612&w=0&k=20&c=8qHEx5AVV36F63vqldHoERkc5czvFo_37joaK-s0YqY="
+            alt="Profile"
+          />
           <div className="profile-name">
             <span>yaswanth</span>
             <span>yaswanth</span>
@@ -60,72 +53,16 @@ const Layout = ({children}) => {
         </div>
       </div>
       <div className="total">
-      <div className="left-sidebar">
-
-      <span className="side-icon">
-        <Link to="/dashboard-page" className="side-icon">
-          <FaTachometerAlt />
-          <p>Dashboard</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/trainer-list" className="side-icon">
-          <FaUserTie /> <p>Trainer list</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/post-requirements" className="side-icon">
-          <FaClipboardList />
-          <p>Post a Requirements</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/my-training-programs" className="side-icon">
-          <FaClipboardCheck />
-          <p>My Training Program's</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/trainers-directory" className="side-icon">
-          <FaBook />
-          <p>Trainers Directory</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/messages" className="side-icon">
-          <FaEnvelope />
-          <p>Messages</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/settings" className="side-icon">
-          <FaCog />
-          <p>Settings</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/billing-payments" className="side-icon">
-          <FaCreditCard />
-          <p>Billing & Payments</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/training-analytics" className="side-icon">
-          <FaChartLine />
-          <p>Training Analytics</p>
-        </Link>
-      </span>
-      <span className="side-icon">
-        <Link to="/training-resource" className="side-icon">
-          <FaFolderOpen />
-          <p>Training Resource</p>
-        </Link>
-      </span>
-    </div>
-      <div className="left-rightside">
-          {children}
-          </div>
-    </div>
+        <div className="left-sidebar">
+          {sidebarLinks.map(({ to, icon, label }) => (
+            <Link key={to} to={to} className="side-icon">
+              {icon}
+              <p>{label}</p>
+            </Link>
+          ))}
+        </div>
+        <div className="left-rightside">{children}</div>
+      </div>
     </div>
   );
 };

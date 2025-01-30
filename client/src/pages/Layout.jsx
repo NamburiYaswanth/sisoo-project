@@ -1,14 +1,14 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-
+import Header from "./../pages/Main/Header";
+import Footer from "../pages/Main/Footer";
 const Layout = ({ children }) => {
   return (
     <div>
       <Header />
       {children}
-      <Footer />
+       <Footer />
     </div>
   );
 };
+
 
 export default Layout;

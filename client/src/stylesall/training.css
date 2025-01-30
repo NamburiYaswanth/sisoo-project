@@ -1,0 +1,104 @@
+
+
+.total{
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .side-icon p {
+    color :#5c5c5c;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .totalpart {
+     display: flex;
+     width : 100%;
+     gap: 10px;
+  }
+  
+  .firstpart {
+    width: 24%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .firstpart p {
+    font-family:serif;
+  }
+  .trainer {
+    padding: 10px;
+    font-size: 19px;
+  }
+  .full {
+    color: rgb(20, 174, 235);
+    padding: 5px 0px;
+  }
+  .name {
+    color: rgb(20, 174, 235);
+    font-size: 18px;
+  }
+  .dev 
+  {
+    font-size: 15px;
+  }
+  .full-min {
+    padding: 7px 0px;
+  }
+  
+  .secondpart {
+    width: 76%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px;
+  }
+  .card-img {
+    height: 115px;
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px ;
+  }
+  
+  .left-img {
+    display: flex;
+    width: 210px;
+    height: 115px;
+    border: 1px solid #e0e0e0;
+    border-radius : 10px;
+    gap: 3px; 
+  }
+  
+  .second-one {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; 
+  }
+  
+  .icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .date {
+    display : flex;
+    gap : 40px;
+    padding: 10px;
+  }
+  
+  .sec-section {
+    padding: 5px 0px;
+    font-size: 18px;
+  }
+  
+  .date-section {
+    font-size: 21.5px;
+  }
+  
+  
+  
+  
+  
+  

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Stepper, Step } from "react-form-stepper";
-
+import "./../stylesall/ongoing.css";
 const Ongoing = () => {
     const [currentStep, setCurrentStep] = useState(0);
     

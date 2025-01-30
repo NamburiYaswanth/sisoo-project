@@ -1,0 +1,50 @@
+
+.settings-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .settings-section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .settings-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .settings-item:last-child {
+    border-bottom: none;
+  }
+  
+  .settings-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .settings-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+  }
+  
+  .arr-icon1{
+    padding: 14px;
+  }
+  
+  

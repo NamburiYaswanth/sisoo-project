@@ -1,0 +1,59 @@
+.main-part{
+    background-color: rgb(94, 94, 247);
+    height:100dvh;
+    padding: 130px;
+}
+
+.white-part{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: white;
+    padding:120px;
+    width: 80%;
+    height: 40%;
+    
+}
+
+.left-part{
+    width:40%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+gap:10px;
+
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(94, 94, 247);
+
+}
+
+input{
+    width:90%;
+    height: 30px;
+
+}
+
+button{
+    background-color:rgb(94, 94, 247) ;
+    color:white;
+    border: none;
+    border-radius: 1px;
+    width:95%;
+height: 40px;
+}
+
+.right-part{
+    background-color: rgb(94, 94, 247);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-left{
+    color: white;
+}

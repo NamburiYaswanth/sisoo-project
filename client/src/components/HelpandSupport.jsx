@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/help.css"
+import "./../stylesall/help.css";
 const HelpandSupport = () => {
   const helpTopics = [
     { title: "Sissoo Basics", description: "Welcome to Sissoo, your go-to application.", icon: "🕊️" },

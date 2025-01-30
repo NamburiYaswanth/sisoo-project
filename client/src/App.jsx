@@ -1,10 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Card from "./components/Card"
-import Text from "./components/Text"
-import LoginPage from "./components/pages/LoginPages";
-import Otppage from "./components/pages/Otppage";
+import { BrowserRouter as Router, Routes, Route,BrowserRouter } from "react-router-dom";
 import Ongoing from "./components/Ongoing";
-import "../styles/style.css";
 import TrainingResources from "./components/pages/TrainingResources";
 import Messages from "./components/pages/Messages";
 import DashBoardPgae from "./components/pages/DashBoardPgae";
@@ -16,43 +11,39 @@ import ProposalManagment from "./components/pages/ProposalManagment";
 import BillingPayment from "./components/pages/BillingPayment";
 import TraininngAnalytics from "./components/pages/TraininngAnalytics";
 import Layout from "./components/Layout";
-import Animate from "./components/Animate"
 import TrainingProgramme from "./components/TrainingProgramme"
-import Settings from "./components/pages/Settings";
 import Settingscompo from "./components/Settings";
 import AccountPrefrence from "./components/pages/AccountPrefrence";
 import HelpandSupport from "./components/HelpandSupport";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Animate from "./pages/Animate";
 import Login from "./pages/Login";
+import Card from "./components/Card"
 import Verify from "./pages/Verify";
-// import Card from './components/Card';
-// import DashBoard from './components/DashBoard';
-// import Settings from './components/Settings';
-// import Text from './components/Text';
-//
-// import TrainingProgramme from './components/TrainingProgramme';
-// import Ongoing from './components/Ongoing';
-// import TrainerCard from './components/TrainerCard';
+import Text from './components/Text';
+ import Settings from './components/Settings';
+// import TrainerCard from './components/pages/TrainerCard';
 // import Profile from './components/Profile';
-
-import "../styles/style.css";
-
+import "./stylesall/training.css";
+import Profile from "./pages/Profile";
 const App = () => {
   return (
     <div>
-      <Router>
+     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Animate />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/verify" element={<Verify />} />
           <Route path="/text" element={<Text />} />
           <Route path="/card" element={<Card />} />
           <Route path="/traning-programme" element={<TrainingProgramme />} />
-          <Route path="/ongoing" element={<Ongoing />} />
+           <Route path="/ongoing" element={<Ongoing />} />
           <Route path="/settings-page" element={<Settings />} />
           <Route path="/" element={<Animate />} />
-          <Route path="/login-page" element={<LoginPage />} />
-          <Route path="/otp-page" element={<Otppage />} />
-          <Route path="/dashboard" element={<Layout />} />
+          {/* <Route path="/login-page" element={<LoginPage />} /> */}
+          <Route path="/otp-page" element={<otpPage />} /> 
+         {/* <Route  path  = "/trainers" element= {<TrainerCard />} /> */}
+        {/* <Route path = "/profile"  element = {<Profile />} /> */}
+          <Route path = "/dashboard"  element = {<Layout />} />
           <Route path="/dashboard-page" element={<DashBoardPgae />} />
           <Route path="/trainer-list" element={<TrainerList />} />
           <Route path="/post-requirements" element={<Requirement />} />
@@ -67,28 +58,9 @@ const App = () => {
           <Route path="/sett" element={<Settingscompo />} />
           <Route path="/preference" element={<AccountPrefrence />} />
           <Route path="/help" element={<HelpandSupport />} />
-
+          <Route path="/profile" element={<Profile />} />
         </Routes>
-      </Router>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Animate />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/verify" element={<Verify />} />
-          {/* <Route path="/text" element={<Text />} />
-          <Route path="/card" element={<Card />} />
-          <Route path="/traning-programme" element={<TrainingProgramme />} />
-          <Route path="/ongoing" element={<Ongoing />} />
-
-         
-          <Route path="/settings-page" element={<Settings />} />
-          <Route path="/" element={<Animate />} />
-          <Route path="/login-page" element={<LoginPage />} />
-          <Route path="/otp-page" element={<Otppage />} /> */}
-          {/* <Route  path  = "/trainers" element= {<TrainerCard />} />
-        <Route path = "/profile"  element = {<Profile />} /> */}
-        </Routes>
-      </BrowserRouter>
+      </BrowserRouter> 
 
     </div>
   );

@@ -1,6 +1,6 @@
-import mail_logo from '../assets/mail.png';
-import git_logo from '../assets/git.png';
-// import '../App.css'
+import mail_logo from '../../assets/mail.png';
+import git_logo from '../../assets/git.png';
+import "../../stylesall/footer.css";
 const Footer = () => {
   return (     
 

@@ -1,6 +1,6 @@
 import { IoPeople } from "react-icons/io5";
 import { FaPeopleLine } from "react-icons/fa6";
-
+import "./../stylesall/card.css";
 
 const Card = () => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Animated from "../assets/group1.png";
-
+import "./../stylesall/animate.css";
 const Animate = () => {
   const navigate = useNavigate();
 

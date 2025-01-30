@@ -3,6 +3,7 @@ import { GoStar } from "react-icons/go";
 import { FaReact } from "react-icons/fa";
 import { SiPython, SiFigma, SiAdobexd } from "react-icons/si";
 import { Stepper, Step } from "react-form-stepper";
+import "../stylesall/training.css";
 
 const TrainingProgramme = () => {
   const [currentStep, setCurrentStep] = useState(0);

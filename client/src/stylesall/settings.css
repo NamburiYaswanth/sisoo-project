@@ -1,0 +1,52 @@
+
+.set-main {
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    gap:20px;
+  }
+  
+  .part1-main {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    position: relative;
+  }
+  
+  .part1-main .set-btn {
+    padding: 27px;
+    font-size: 18px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .part1-main .set-btn:hover {
+    background-color: #cfe7f7;
+  }
+  
+  .part1-main .set-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: blue;
+    transform: scaleY(0);
+  }
+  
+  .part1-main .set-btn:hover::before {
+    transform: scaleY(1);
+  }
+  
+  .part2-main {
+    width: 100%;
+    background-color: #fff;
+   
+  }

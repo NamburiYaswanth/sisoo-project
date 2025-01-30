@@ -1,5 +1,5 @@
 import { FaArrowLeft } from 'react-icons/fa';
-
+import "./../stylesall/text.css";
 const Text = () => {
   return (
     <div className="welcome-container">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import Settings from './Settings';
-
+import "./../../stylesall/loginandsecurity.css"
 const LoginandSecurity = () => {
   return (
     <Settings>

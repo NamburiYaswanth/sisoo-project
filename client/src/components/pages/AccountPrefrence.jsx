@@ -1,6 +1,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import Settings from "./Settings";
+import "./../../stylesall/accpref.css";
 const AccountPrefrence = () => {
   return (
     <Settings>
