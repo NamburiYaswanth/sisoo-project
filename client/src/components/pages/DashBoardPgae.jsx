@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const DashBoardPgae = () => {
   return (
-    <div>
+    <Layout>
       <p>Dash board page</p>
-    </div>
+    </Layout>
   );
 }
 

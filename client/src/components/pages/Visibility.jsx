@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import Settings from './Settings';
 
 const Visibility = () => {
   return (
-    <div>
+    <Settings>
         <div className="settings-section">
             <h3>Display mode</h3>
             <p>mode</p>
@@ -27,7 +28,7 @@ const Visibility = () => {
           <IoIosArrowForward />
         </div>
       </div>
-    </div>
+    </Settings>
   );
 }
 

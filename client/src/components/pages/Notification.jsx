@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import Settings from './Settings';
 
 const Notification = () => {
   return (
-    <div>
+    <Settings>
        <div className="settings-section">
         <h3>Notification you Receive</h3>
         <div className="settings-item">
@@ -23,7 +24,7 @@ const Notification = () => {
           <IoIosArrowForward />
         </div>
       </div>
-    </div>
+    </Settings>
   );
 }
 

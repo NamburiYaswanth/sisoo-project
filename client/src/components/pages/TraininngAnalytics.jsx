@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const TraininngAnalytics = () => {
   return (
-    <div>
+    <Layout>
       <p>Traing and analytics</p>
-    </div>
+    </Layout>
   );
 }
 

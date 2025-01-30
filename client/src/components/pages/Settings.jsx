@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const Settings = () => {
   return (
-    <div>
+    <Layout>
       <p>setting page</p>
-    </div>
+    </Layout>
   );
 }
 
